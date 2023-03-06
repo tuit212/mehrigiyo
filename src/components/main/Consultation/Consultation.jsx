@@ -17,6 +17,14 @@ function Consultation() {
                     <div>
                         <img src={img} alt="" />
                     </div>
+                    <div className="abs">
+                        <div title='phone' className='phone'>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div title='sms' className='sms'>
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
