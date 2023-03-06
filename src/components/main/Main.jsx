@@ -1,4 +1,5 @@
 import React from 'react'
+import Cart from './Cart/Cart'
 import Consultation from './Consultation/Consultation'
 import Hero from './Hero/Hero'
 
@@ -7,6 +8,7 @@ function Main() {
         <div>
             <Hero/>
             <Consultation/>
+            <Cart/>
         </div>
     )
 }
