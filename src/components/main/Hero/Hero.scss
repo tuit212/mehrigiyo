@@ -12,12 +12,13 @@
           display: flex;
           align-items: center;
           gap: 100px;
-
+          
           .logo{
             font-weight: 600;
             line-height: 39px;
             font-size: 32px;
             color: #000;
+            text-decoration: none;
           }
 
           .hero__pages{
@@ -31,6 +32,7 @@
                 font-size: 16px;
                 color: #657B6E;
                 position: relative;
+                text-decoration: none;
             }
 
             .active{
