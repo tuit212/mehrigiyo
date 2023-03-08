@@ -1,0 +1,145 @@
+.FooterTop-section {
+    background-image: url("../../../Assets/img/footer/bacck.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 45px;
+
+    .logo{
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 39px;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    .footer-card{
+        max-width: 550px;
+        width: 100%;
+        background: #53B175;
+        padding: 12px 0 17px 0;
+        border-radius: 25px 25px 0px 0px;
+
+        & > ul {
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+            margin: 0;
+            padding-left: 37px;
+
+            & > li {
+                width: 50%;
+                text-align: left;
+
+                .top {
+                    margin: 0;
+                    font-weight: 400;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: #fff;
+                    opacity: 0.6;
+                }
+
+                .bottom {
+                    margin: 0;
+                    font-weight: 600;
+                    line-height: 27px;
+                    font-size: 18px;
+                    color: #fff;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+    .list{
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 70px;
+
+        & > li {
+
+            & > ul {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                .url{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    display: block;
+                    color: #fff;
+                    text-align: center;
+                    position: relative;
+                    background-color: #3B3B3B;
+
+                    & > i {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .textTop{
+                font-weight: 400;
+                line-height: 28px;
+                font-size: 16px;
+                color: #fff;
+                opacity: 0.8;
+                margin: 0;
+            }
+
+            .text{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: 16px;
+                color: #fff;
+                opacity: 0.8;
+                margin: 0;
+                margin: 18px 0;
+            }
+
+            .center{
+                font-weight: 500;
+                line-height: 28px;
+                font-size: 18px;
+                color: #F4F5F7;
+                margin-left: 0;
+            }
+
+            .right{
+                font-weight: 500;
+                line-height: 28px;
+                font-size: 18px;
+                color: #F4F5F7;
+                margin-bottom: 24px;
+            }
+
+            .link {
+                margin-top: 15px;
+                display: block;
+            }
+
+            &:nth-child(1){
+                width: 30%;
+            }
+
+            &:nth-child(3){
+                width: 20%;
+                margin-left: 3%;
+            }
+
+            &:nth-child(2){
+                width: 12%;
+                margin-left: 35%;
+            }
+        }
+    }
+}

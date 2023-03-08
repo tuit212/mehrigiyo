@@ -1,0 +1,38 @@
+.footer__list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 22px 0;
+
+    & > li {
+        width: 50%;
+        position: relative;
+
+        & > p {
+            margin: 0;
+            font-weight: 400;
+            line-height: 18px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        .link{
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 28px;
+            font-size: 14px;
+            color: #282938;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            &:nth-child(2){
+                margin-right: 100px;
+            }
+
+            &:nth-child(1){
+                margin-right: 230px;
+            }
+        }
+    }
+}
