@@ -5,7 +5,7 @@ function Cart() {
     return (
         <div className='container'>
             <div className="card-section">
-                s
+                asdfgc
             </div>
         </div>
     )

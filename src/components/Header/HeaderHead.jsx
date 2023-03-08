@@ -34,7 +34,7 @@ function HeaderHead() {
                             <p>Toshkent shahar</p>
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <Link className='left'>
+                        <Link to={"/login"} className='left'>
                             <p>Kirish</p>
                             <i class="fa-solid fa-user"></i>
                         </Link>
