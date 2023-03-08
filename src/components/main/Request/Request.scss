@@ -1,0 +1,88 @@
+.Request-section{
+    padding: 320px 0 131px 0;
+    background-image: url("../../../Assets/img/back.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+    .request{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .request__im {
+            width: 45%;
+        }
+
+        .request__form {
+            width: 50%;
+
+            .form{
+                max-width: 364px;
+                width: 100%;
+
+                .btn{
+                    border-radius: 50px;
+                    background: rgba(83, 177, 117, 0.2);
+                    width: 213px;
+                    padding: 10px 0;
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-size: 16px;
+                    color: #181725;
+                    text-align: center;
+                    margin-top: 88px;
+                }
+
+                .input{
+                    margin-top: 15px;
+        
+                    & > label {
+                        display: block;
+                        font-weight: 400;
+                        line-height: 29px;
+                        font-size: 14px;
+                        color: #C3C3C3;
+                    }
+        
+                    & > input {
+                        border:none;
+                        border-bottom: 1px solid #E2E2E2;
+                        outline: none;
+                        display: block;
+                        width: 100%;
+                        padding: 4px 10px;
+                        background-color: transparent;
+        
+                        &:focus{
+                            border: 1px solid #E2E2E2;
+                            background-color: #fff;
+                        }
+        
+                        &:valid{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 29px;
+                            color: #000;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+
+            & > span {
+                font-weight: 400;
+                line-height: 24px;
+                font-size: 16px;
+                color: #53B175;
+            }
+
+            & > p {
+                font-weight: 600;
+                line-height: 125%;
+                font-size: 30px;
+                color: #000000;
+                margin: 0;
+            }
+        }
+    }
+}
