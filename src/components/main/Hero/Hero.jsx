@@ -27,7 +27,7 @@ function Hero({size}) {
                         </NavLink>
                         <NavLink to={"/card"} className='links'>
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <span>{size}</span>
+                            <span>{"0"}</span>
                         </NavLink>
                     </div>
                 </div>

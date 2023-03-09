@@ -59,6 +59,7 @@
             align-items: center;
             gap: 10px;
 
+
             .links {
               padding: 5px 9px;
               background: #FFFFFF;
@@ -86,6 +87,14 @@
                 top: -8px;
                 color: #fff;
 
+              }
+            }
+
+            .active{
+              background: #53B175;
+
+              & > i {
+                color: #fff;
               }
             }
         }
