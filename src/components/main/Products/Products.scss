@@ -1,0 +1,18 @@
+.products{
+    padding: 0 60px;
+
+    & > h3 {
+        font-weight: 600;
+        line-height: 36px;
+        font-size: 24px;
+        color: #282828;
+    }
+
+    .products__box{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1500px;
+        margin-top: 50px;
+    }
+}

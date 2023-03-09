@@ -4,17 +4,26 @@ import { Routes , Route } from "react-router-dom";
 import Main from "./components/main/Main";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import React from "react";
+import { useState } from "react";
 
 function App() {
+
+  const [show , setShow] = useState(true)
+  const [cart , setCart] = useState([])
+
+
   return (
     <div className="App">
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
-      </Routes>
-      <Footer/>
+      <React.Fragment>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Main/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+        </Routes>
+        <Footer/>
+      </React.Fragment>
     </div>
   );
 }
