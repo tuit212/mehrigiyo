@@ -6,21 +6,28 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import React from "react";
 import { useState } from "react";
+import Cart from "./pages/Cart/Cart";
 
 function App() {
 
-  const [show , setShow] = useState(true)
+  // const [show , setShow] = useState(true)
   const [cart , setCart] = useState([])
+
+
+  const handleClick = (item) => {
+    console.log(item);
+  }
 
 
   return (
     <div className="App">
       <React.Fragment>
-        <Header/>
+        <Header />
         <Routes>
-          <Route path="/" element={<Main/>} />
+          <Route path="/" element={<Main size={cart.length}  handleClick={handleClick} />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
+          <Route path="/card" element={<Cart/>} />
         </Routes>
         <Footer/>
       </React.Fragment>

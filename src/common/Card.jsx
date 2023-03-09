@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './Card.scss'
 
 
-function Card({item}) {
+function Card({item , handleClick}) {
 
     const {name , text , cost , price , img} = item
     return (
@@ -21,7 +21,7 @@ function Card({item}) {
                     <p className='price'>{price}</p>
                 </div>
                 <div className="right">
-                    <button>+</button>
+                    <button onClick={() => handleClick(item.name)}>+</button>
                 </div>
             </div>
             <Link to={"/"} className='link'>

@@ -4,7 +4,7 @@ import HeaderHead from './HeaderHead'
 function Header() {
     return (
         <div>
-            <HeaderHead/>
+            <HeaderHead  />
         </div>
     )
 }

@@ -3,7 +3,7 @@ import './Hero.scss'
 import { Link , NavLink} from 'react-router-dom'
 import heart from '../../../Assets/img/main/heatr.svg'
 
-function Hero() {
+function Hero({size}) {
     return (
         <div className='section-hero'>
             <div className="container">
@@ -22,12 +22,13 @@ function Hero() {
                         </div>
                     </div>
                     <div className="hero__box">
-                        <Link to={"/likes"} className="links">
+                        <NavLink to={"/likes"} className="links">
                             <img src={heart} alt="heaert" />
-                        </Link>
-                        <Link to={"/card"} className='links'>
+                        </NavLink>
+                        <NavLink to={"/card"} className='links'>
                             <i class="fa-solid fa-cart-shopping"></i>
-                        </Link>
+                            <span>{size}</span>
+                        </NavLink>
                     </div>
                 </div>
             </div>
